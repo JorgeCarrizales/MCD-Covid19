@@ -8,9 +8,15 @@ Además, podrás realizar la instalación y creación de contenedores en _**Dock
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+### Recursos e instalaciones
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+- Descargar docker](https://docs.docker.com/get-docker/)
+<p align="center">
+<img src="https://images.unsplash.com/photo-1415604934674-561df9abf539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2772&q=80" width="100" height="100" border="10"/>
+</p>
+
+[Instalar docker](https://docs.docker.com/get-started/)
+
 
 ```markdown
 Syntax highlighted code block
