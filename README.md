@@ -1,6 +1,10 @@
-## Welcome to GitHub Pages
+## Covid 19 en el estado de Sonora  
 
-You can use the [editor on GitHub](https://github.com/JorgeCarrizales/MCD_Covid19/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+En está página encontrarás una guía rápida y fácil de como filtrar datos de archivos .csv por medio de lineas de comando en una terminal:
+Además, podrás realizar la instalación y creación de contenedores en _**Docker**_ ([Ver más sobre docker](https://hub.docker.com/)).
+
+<sub>Los datos utilizados en esta página son datos de uso libre proporcionados por Datos Abiertos Dirección General de Epidemiología de México</sub>
+
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
