@@ -1,10 +1,7 @@
 ## Covid 19 en el estado de Sonora  
 
-En está página encontrarás una guía rápida y fácil de como filtrar datos de archivos .csv por medio de lineas de comando en una terminal:
-Además, podrás realizar la instalación y creación de contenedores en _**Docker**_ ([Ver más sobre docker](https://hub.docker.com/)).
-
 <p align="center">
-<img src="https://github.com/JorgeCarrizales/MCD-Covid19/raw/main/images/CD%20BACK.jpg" width="900" height="350"/>
+<img src="https://github.com/JorgeCarrizales/MCD-Covid19/raw/main/images/CD%20BACK.jpg" width="900" height="200"/>
 </p>
 
 
