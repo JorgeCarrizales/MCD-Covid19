@@ -12,12 +12,12 @@ Además, podrás realizar la instalación y creación de contenedores en _**Dock
 
 - Descargar _**Docker**_: El siguiente link te dirigirá a "Get Docker" de la plataforma oficial de _**Docker**_ [Descargar docker](https://docs.docker.com/get-docker/)
 <p align="center">
-<img src="https://github.com/JorgeCarrizales/MCD-Covid19/raw/main/images/DownloadDocker.png" width="400" height="500" border="10"/>
+<img src="https://github.com/JorgeCarrizales/MCD-Covid19/raw/main/images/DownloadDocker.png" width="400" height="500" border="1"/>
 </p>
 
 - Instalar _**Docker**_: En el siguiente link te dirigierá a "Getting Started" de la plataforma oficial de _**Docker**_ [Instalar docker](https://docs.docker.com/get-started/)
 <p align="center">
-<img src="https://github.com/JorgeCarrizales/MCD-Covid19/raw/main/images/GettingStartedDocker.png" width="300" height="500" border="10"/>
+<img src="https://github.com/JorgeCarrizales/MCD-Covid19/raw/main/images/GettingStartedDocker.png" width="300" height="500" border="1"/>
 </p>
 
 - Descargar los datos proporcionados por la dirección general de epidemiología de México [Click para Descargar](https://datosabiertos.salud.gob.mx/gobmx/salud/datos_abiertos/efe/datos_abiertos_efe.zip)
