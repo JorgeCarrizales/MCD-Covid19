@@ -1,7 +1,7 @@
 ## Covid 19 en el estado de Sonora  
 
 <p align="center">
-<img src="https://github.com/JorgeCarrizales/MCD-Covid19/raw/main/images/CD%20BACK.jpg" width="900" height="200"/>
+<img src="https://github.com/JorgeCarrizales/MCD-Covid19/raw/main/images/network-g652d2fe49_1920.jpg" width="900" height="200"/>
 </p>
 
 
