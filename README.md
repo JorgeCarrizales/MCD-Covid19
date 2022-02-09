@@ -3,20 +3,27 @@
 En está página encontrarás una guía rápida y fácil de como filtrar datos de archivos .csv por medio de lineas de comando en una terminal:
 Además, podrás realizar la instalación y creación de contenedores en _**Docker**_ ([Ver más sobre docker](https://hub.docker.com/)).
 
-<sub>Los datos utilizados en esta página son datos de uso libre proporcionados por Datos Abiertos Dirección General de Epidemiología de México</sub>
+<p align="center">
+<img src="https://github.com/JorgeCarrizales/MCD-Covid19/raw/main/images/DownloadDocker.png" width="400" height="500" border="10"/>
+</p>
 
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 ### Recursos e instalaciones
 
-- Descargar docker](https://docs.docker.com/get-docker/)
+- Descargar _**Docker**_: El siguiente link te dirigirá a "Get Docker" de la plataforma oficial de _**Docker**_ [Descargar docker](https://docs.docker.com/get-docker/)
+<p align="center">
+<img src="https://github.com/JorgeCarrizales/MCD-Covid19/raw/main/images/DownloadDocker.png" width="400" height="500" border="10"/>
+</p>
 
-
-[Instalar docker](https://docs.docker.com/get-started/)
+- Instalar _**Docker**_: En el siguiente link te dirigierá a "Getting Started" de la plataforma oficial de _**Docker**_ [Instalar docker](https://docs.docker.com/get-started/)
 <p align="center">
 <img src="https://github.com/JorgeCarrizales/MCD-Covid19/raw/main/images/GettingStartedDocker.png" width="300" height="500" border="10"/>
 </p>
+
+- Descargar los datos proporcionados por la dirección general de epidemiología de México [Click para Descargar](https://datosabiertos.salud.gob.mx/gobmx/salud/datos_abiertos/efe/datos_abiertos_efe.zip)
+
+<sub>Los datos utilizados en esta página son datos de uso libre proporcionados por Datos Abiertos Dirección General de Epidemiología de México</sub>
+
 
 ```markdown
 Syntax highlighted code block
