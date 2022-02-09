@@ -4,7 +4,7 @@ En está página encontrarás una guía rápida y fácil de como filtrar datos d
 Además, podrás realizar la instalación y creación de contenedores en _**Docker**_ ([Ver más sobre docker](https://hub.docker.com/)).
 
 <p align="center">
-<img src="https://github.com/JorgeCarrizales/MCD-Covid19/raw/main/images/DownloadDocker.png" width="400" height="500" border="10"/>
+<img src="https://github.com/JorgeCarrizales/MCD-Covid19/raw/main/images/CD%20BACK.jpg" width="900" height="350"/>
 </p>
 
 
