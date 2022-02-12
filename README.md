@@ -65,13 +65,13 @@ docker run -it  --rm -e LANG=C.UTF-8 ubuntu
 #### 3.- Descargar actualizaciones de ubuntu
 ```shell
 cd
-docker apt-get update
+apt-get update
 ```
 
 #### 4.- Instalar los recursos necesarios
 ```shell
 cd
-docker apt-get install curl unzip less vim nano pip tldr
+apt-get install curl unzip less vim nano pip tldr
 ```
 - Curl: Sirve para descargar archivos por internet
 - unzip: Sirve para descomprimir archivos
@@ -82,7 +82,7 @@ docker apt-get install curl unzip less vim nano pip tldr
 
 #### 5.- Descargar archivo de donde obtendremos los datos
 ```shell
-curl -L -O https://datosabiertos.salud.gob.mx/gobmx/salud/datos_abiertos/efe/datos_abiertos_efe.zip
+curl -L -O https://datosabiertos.salud.gob.mx/gobmx/salud/datos_abiertos/datos_abiertos_covid19.zip
 ls
 ```
 - -L: Si hay links simbolicos, que los obtenga del ingresado
@@ -91,7 +91,7 @@ ls
 
 #### 6.- Descomprimimos el archivo
 ```shell
-unzip datos_abiertos_efe.zip
+unzip datos_abiertos_covid19.zip
 ls
 ```
 Una vez hecho, verificamos que se haya descomprimido.
@@ -106,4 +106,4 @@ csvkit es una paquetería de python que nos permite realizar distintas acciones 
 ```shell
 csvcut -n nombre_del_archivo.csv
 ```
-- -n obtiene los nombres
+- -n obtiene los nombres de las columnas
