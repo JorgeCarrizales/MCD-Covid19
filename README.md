@@ -4,7 +4,7 @@
 <img src="https://github.com/JorgeCarrizales/MCD-Covid19/raw/main/images/network-g652d2fe49_1920.jpg" width="900" height="200"/>
 </p>
 
-La realización de esta práctica es para obtener las personas de 20 a 30 años que tienen o tuvieron covid 19.
+La realización de esta práctica es para obtener las personas de edad entre 20 y 39 años confirmadas de covid 19 en Sonora.
 
 ## Recursos e instalaciones previas
 - Descargar e instalar _**git**_: El siguiente lick te dirigirá a la página oficial de Git [Ver Git](https://git-scm.com/downloads)
@@ -17,7 +17,7 @@ La realización de esta práctica es para obtener las personas de 20 a 30 años 
 <img src="https://github.com/JorgeCarrizales/MCD-Covid19/raw/main/images/DownloadDocker.png" width="400" height="500" border="1"/>
 </p>
 
-- Descargar los datos proporcionados por la dirección general de epidemiología de México [Click para Descargar](https://datosabiertos.salud.gob.mx/gobmx/salud/datos_abiertos/efe/datos_abiertos_efe.zip)
+- Descargar los datos proporcionados por la dirección general de epidemiología de México [Click para Descargar](https://datosabiertos.salud.gob.mx/gobmx/salud/datos_abiertos/datos_abiertos_covid19.zip)
 
 <sub>Los datos utilizados en esta página son datos de uso libre proporcionados por Datos Abiertos Dirección General de Epidemiología de México</sub>
 
@@ -60,7 +60,7 @@ Les pedirá su usuario y contraseña de dockerhub
 
 #### 2.- Correr la imagen de ubuntu
 ```shell
-docker run -it  --rm -e LANG=C.UTF-8 ubuntu
+docker run -it --name datacovid19 ubuntu
 ```
 #### 3.- Descargar actualizaciones de ubuntu
 ```shell
@@ -85,25 +85,38 @@ apt-get install curl unzip less vim nano pip tldr
 curl -L -O https://datosabiertos.salud.gob.mx/gobmx/salud/datos_abiertos/datos_abiertos_covid19.zip
 ls
 ```
+#### 6.- Descargamos el diccionario de los datos de covid
+```shell
+curl -L -O https://datosabiertos.salud.gob.mx/gobmx/salud/datos_abiertos/diccionario_datos_covid19.zip
+ls
+```
+
 - -L: Si hay links simbolicos, que los obtenga del ingresado
 - -O: Guarda el archivo como venga el nombre del link
 - Ejecutamos ls para verificar la descarga del archivo
 
-#### 6.- Descomprimimos el archivo
+#### 7.- Descomprimimos los archivos
 ```shell
 unzip datos_abiertos_covid19.zip
+unzip diccionario_datos_covid19.zip
 ls
 ```
 Una vez hecho, verificamos que se haya descomprimido.
 
-#### 7.- Instalar csvkit
+#### 8.- Instalar csvkit
 ```shell
 pip install csvkit
 ```
 csvkit es una paquetería de python que nos permite realizar distintas acciones en archivos csv (excel)
 
-#### 8.- Obtener los nombres de las columnas
+#### 9.- Obtener los nombres de las columnas
 ```shell
-csvcut -n nombre_del_archivo.csv
+csvcut -n datos_abiertos_covid19.csv
 ```
 - -n obtiene los nombres de las columnas
+
+#### 10.- Dejamos solo los dataos de Sonora
+```shell
+csvgrep -c nombre_del_archivo.csv
+```
+- -c hace referencia al nombre de la columna
