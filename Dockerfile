@@ -9,8 +9,8 @@ RUN  apt-get -y update && apt-get install -y apt-utils unzip curl pip
 
 RUN pip install csvkit 
 
-ADD covid19_sonora.sh
+ADD covid19_sonora.sh /root/covid19_sonora.sh
 
-ENTRYPOINT ["/covid19_sonora.sh"]
+ENTRYPOINT ["bash", "/covid19_sonora.sh"]
 
 
