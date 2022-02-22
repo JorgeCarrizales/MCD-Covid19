@@ -8,39 +8,43 @@ La realización de esta práctica es para obtener las personas de edad entre 20 
 
 ## Recursos e instalaciones previas
 - Descargar e instalar _**git**_: El siguiente lick te dirigirá a la página oficial de Git [Ver Git](https://git-scm.com/downloads)
-<p align="center">
-<img src="https://github.com/JorgeCarrizales/MCD-Covid19/raw/main/images/GIT.png" width="400" height="500" border="1"/>
-</p>
 
 - Descargar e instalar _**Docker**_: El siguiente link te dirigirá a "Get Docker" de la plataforma oficial de _**Docker**_ [Ver docker](https://docs.docker.com/get-docker/)
-<p align="center">
-<img src="https://github.com/JorgeCarrizales/MCD-Covid19/raw/main/images/DownloadDocker.png" width="400" height="500" border="1"/>
-</p>
+- 
+<sub>Los datos acerca del covid 19 utilizados en esta página son datos de uso libre proporcionados por <b>Datos Abiertos Dirección General de Epidemiología de México. [Ver más](https://www.gob.mx/salud/documentos/datos-abiertos-152127) </b></sub>
 
-- Descargar los datos proporcionados por la dirección general de epidemiología de México [Click para Descargar](https://datosabiertos.salud.gob.mx/gobmx/salud/datos_abiertos/datos_abiertos_covid19.zip)
-
-<sub>Los datos utilizados en esta página son datos de uso libre proporcionados por Datos Abiertos Dirección General de Epidemiología de México</sub>
-
-## Obtención de los datos mediante script
+## Obtención de los datos
 
 #### 1.- Clonar el repositorio en la carpeta deseada
 ```shell
 git clone https://github.com/JorgeCarrizales/MCD-Covid19.git
 ```
 
-#### 2.- Dentro de la carpeta del repositorio, ejecutar el siguiente comando.
+#### 2.- Dentro de la carpeta del repositorio, ejecutar el siguiente comando para crear la imagen
 ```shell
-docker build -t ubuntu .
+docker build -t covid19_sonora .
 ```
 
-#### 3.- Creamos un contenedor
+#### 3.- Creamos un contenedor en base a la imagen creada
 ```shell
-docker create -i --name ubuntu_covid19 ubuntu
+docker create -i --name covid19_container covid19_sonora
 ```
 
-#### 4.- Ejecutamos el script
+#### 4.- Se inicia el contenedor
 ```shell
-docker exec -it ubuntu_covid19 bin/bash
+docker start covid19_container
+```
+<sub>**NOTA: También se puede iniciar el contenedor utilizando su ID solo sustituyendo el nombre por el ID (en caso de no permitirte iniciarlo utilizando el nombre)**</sub>
+
+#### 5.- Se ejecuta el script para descargar y filtrar los datos
+```shell
+docker exec -it covid19_container bash
 ```
 
-##
+#### 6.- Una vez finalizado el filtrado, copiamos el archivo final obtenido de nuestro contenedor y lo guardamos en nuestro ordenador.
+```shell
+docker cp covid19_container :/root/COVIDSONORA_20_39_POSITIVOS.csv
+```
+
+## Resultado
+Una vez copiado el archivo podremos visualizar el resultado final el cual es: Personas de edad entre 20 y 39 años con resultado positivo a covid 19 en el estado de Sonora.
