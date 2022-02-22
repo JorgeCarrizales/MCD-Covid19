@@ -1,7 +1,7 @@
 #!/bin/sh
 echo "Scrip que obtiene los datos de personas de edad entre 20 y 39 años confirmadas de covid 19 en Sonora. "
 echo "Descargando los datos . . ."
-curl -L -O curl -L -O https://datosabiertos.salud.gob.mx/gobmx/salud/datos_abiertos/datos_abiertos_covid19.zip
+curl -L -O https://datosabiertos.salud.gob.mx/gobmx/salud/datos_abiertos/datos_abiertos_covid19.zip
 echo "Descomprimiendo datos. . ."
 unzip datos_abiertos_covid19.zip
 echo "El archivo descomprimido se guardara con el nombre covid_data.csv"
