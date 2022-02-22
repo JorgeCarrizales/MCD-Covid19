@@ -10,7 +10,7 @@ La realización de esta práctica es para obtener las personas de edad entre 20 
 - Descargar e instalar _**git**_: El siguiente lick te dirigirá a la página oficial de Git [Ver Git](https://git-scm.com/downloads)
 
 - Descargar e instalar _**Docker**_: El siguiente link te dirigirá a "Get Docker" de la plataforma oficial de _**Docker**_ [Ver docker](https://docs.docker.com/get-docker/)
-- 
+
 <sub>Los datos acerca del covid 19 utilizados en esta página son datos de uso libre proporcionados por <b>Datos Abiertos Dirección General de Epidemiología de México. [Ver más](https://www.gob.mx/salud/documentos/datos-abiertos-152127) </b></sub>
 
 ## Obtención de los datos
